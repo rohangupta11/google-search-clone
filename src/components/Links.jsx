@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 const links = [
-  { url: "/search", text: "All", image:"magnifying-glass"},
-  { url: "/news", text: "News", image:"newspaper"},
-  { url: "/image", text: "Images", image:"image"},
-  { url: "/video", text: "Videos", image:"video"}
+  { url: "/google-search-clone/search", text: "All", image:"magnifying-glass"},
+  { url: "/google-search-clone/news", text: "News", image:"newspaper"},
+  { url: "/google-search-clone/image", text: "Images", image:"image"},
+  { url: "/google-search-clone/video", text: "Videos", image:"video"}
 ];
 const Links = () => {
   return (
