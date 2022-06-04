@@ -11,7 +11,7 @@ const Results = () => {
   useEffect(() => {
     if (searchTerm) {
       getResults(
-        `${location.pathname.substring(20)}/q=${searchTerm}&num=40&lr=lang_en&hl=en`
+        `${location.pathname}/q=${searchTerm}&num=40&lr=lang_en&hl=en`
       );
     }
   }, [searchTerm, location.pathname]);
@@ -23,7 +23,7 @@ const Results = () => {
       </p>
     );
   else {
-    switch (location.pathname.substring(20)) {
+    switch (location.pathname) {
       case "/search":
         return (
           <div className="flex flex-wrap justify-between space-y-6 sm:px-56">
