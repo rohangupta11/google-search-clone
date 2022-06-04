@@ -5,8 +5,8 @@ import Error from "./Error";
 const Routes = () => {
   return <div className="p-4">
     <Switch>
-      <Route exact path="/" element={<Navigate replace to="/search" />} />
-      {['/search','/image','/video','/news'].map((path) => (
+      <Route exact path="/google-search-clone/" element={<Navigate replace to="/google-search-clone/search" />} />
+      {['/google-search-clone/search','/google-search-clone/image','/google-search-clone/video','/google-search-clone/news'].map((path) => (
         <Route exact path={path} element={<Results />} />
       ))}
       <Route path="/*" element={<Error />} />
